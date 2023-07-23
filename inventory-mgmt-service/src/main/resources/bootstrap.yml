@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: inventory-mgmt-service
+  config:
+    import:
+    - configserver:http://localhost:8889
+  cloud:
+    config:
+      username: configadmin
+      password: welcome1

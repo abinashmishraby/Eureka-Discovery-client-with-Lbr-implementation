@@ -1,0 +1,18 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: tatamotors-configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://abinashmishraby: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@github.com/abinashmishraby/tatamotors-configrepo.git
+          refresh-rate: 120
+  security:
+    user:
+      name: configadmin
+      password: welcome1
+      roles:
+      - administration
+

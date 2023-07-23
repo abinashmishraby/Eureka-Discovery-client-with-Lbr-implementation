@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: automobile-production-service
+  config:
+    import:
+    - configserver:http://localhost:8889
+  cloud:
+    config:
+      username: configadmin
+      password: welcome1

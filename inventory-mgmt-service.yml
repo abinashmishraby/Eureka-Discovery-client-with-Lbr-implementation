@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inventorymgmtdb
+    username: root
+    password: MyNewPass
+  jpa:
+    show-sql: true
+    generate-ddl: false
+stock:
+   transportType: air
+   slaDays: 5
+   
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
